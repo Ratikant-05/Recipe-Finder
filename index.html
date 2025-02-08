@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a6869266dc.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-leaf"></i><a href="#">Recipe Finder</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Recipe Index</a></li>
+          <li><a href="#">Cook Book</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="searchIcon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.COMPLEX}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          </li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <!-- <li><a href="#"><i class="fa-solid fa-sun"></i></a></li> -->
+          <!-- <li id="visibility"><a href="#"><i class="fa-solid fa-moon"></i></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1><i class='bx bxl-javascript'></i> Recipe Finder App</h1>
+      <form>
+        <input id="search" type="text" placeholder="Enter your ingredients here...">
+        <button type="submit" id="button">Search</button>
+      </form>
+    </div>
+    <div class="filter-scroll">
+      <label class="label" for="cuisine">Filter by Cuisine:</label>
+      <select id="cuisine">
+        <option value="all">All</option>
+        <option value="indian">Indian</option>
+        <option value="greek">Greek</option>
+        <option value="moroccan">Moroccan</option>
+        <option value="filipino">Filipino</option>
+        <option value="Chinese">Chinese</option>
+        <option value="malaysian">Malaysian</option>
+        <option value="british">British</option>
+        <option value="russian">Russian</option>
+        <option value="french">French</option>
+        <option value="mexican">Mexican</option>
+        <option value="thai">Thai</option>
+        <option value="jamaican">Jamaican</option>
+        <option value="american">American</option>
+        <option value="irish">Irish</option>
+        <option value="vietnamese">Vietnamese</option>
+        <option value="japanese">Japanese</option>
+    </select>
+    </div>
+    <div class="filter-buttons">
+      <div id="cuisine">
+        <button id="filter-all">All</button>
+        <button id="filter-vegetarian">Vegetarian</button>
+        <button id="filter-seafood">Seafood</button>
+        <button id="filter-chicken">Chicken</button>
+        <button id="filter-vegan">Vegan</button>
+        <button id="filter-salmon">Salmon</button>
+        <button id="filter-pork">Pork</button>
+        <button id="filter-breakfast">Breakfast</button>
+        <button id="filter-dessert">Dessert</button>
+        <button id="filter-starter">Starter</button>
+        <button id="filter-lamb">Lamb</button>
+        <button id="filter-goat">Goat</button>
+      </div>
+    </div>
+    <div id="results"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/01/28/09/20250128094750-NK52HNI6.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
